@@ -1,6 +1,6 @@
 
 				 12/6/2020
-				 ---------
+				 ---------fdf
 
 [bash-5.1 released]
 
@@ -10,11 +10,11 @@ Makefile.in
 	- bashline.o: add dependency on ${DEFDIR}/builtext.h. Report from
 	  Fazal Majid <fazal@majid.org>
 
-				   12/11
+				   12/11fdf
 				   -----
 builtins/wait.def
 	- wait_builtin: don't assign the variable given with -p if there are no
-	  jobs to wait for. Report and fix from O�uz <oguzismailuysal@gmail.com>
+	  jobs to wait for. Report and fix from OÄuz <oguzismailuysal@gmail.com>
 
 arrayfunc.c
 	- kvpair_assignment_p: return non-zero if argument L appears to be a
@@ -298,16 +298,16 @@ subst.c
 				    ---
 lib/glob/glob.c
 	- dequote_pathname: fix function definition for non-multibyte systems.
-	  Report and fix from Marc Aurèle La France <tsi@tuyoix.net>
+	  Report and fix from Marc AurÃ¨le La France <tsi@tuyoix.net>
 
 Makefile.in,doc/Makefile.in
 	- for certain targets, remove files before creating them to deal with
 	  symlinked build trees.
-	  Report and fix from Marc Aurèle La France <tsi@tuyoix.net>
+	  Report and fix from Marc AurÃ¨le La France <tsi@tuyoix.net>
 
 examples/loadables/accept.c
 	- include limits.h before typemax.h
-	  Report and fix from Marc Aurèle La France <tsi@tuyoix.net>
+	  Report and fix from Marc AurÃ¨le La France <tsi@tuyoix.net>
 
 builtins/gen-helpfiles.c
 	- if USING_BASH_MALLOC is defined, make sure to undefine malloc as well
@@ -833,7 +833,7 @@ bashline.c
 	  (e.g., because we're the target of a redirection) and should not
 	  check for a programmable command completion or tell the programmable
 	  completion code to use command completion. Report and fix from
-	  Marc Aurèle La France <tsi@tuyoix.net>
+	  Marc AurÃ¨le La France <tsi@tuyoix.net>
 
 				   4/16
 				   ----
@@ -1368,7 +1368,7 @@ doc/{bash.1,bashref.texi},lib/readline/doc/{rluser,rltech}.texi
 	- slight wording changes to rewrite gender-specific language. From a
 	  report by Vipul Kumar <kumar+bug-bash@onenetbeyond.org>, suggested
 	  language from G. Branden Robinson <g.branden.robinson@gmail.com>,
-	  Lawrence Velázquez <vq@larryv.me>,
+	  Lawrence VelÃ¡zquez <vq@larryv.me>,
 	  and Andrew Church <achurch+bash@achurch.org>
 
 builtins/fc.def
@@ -1609,7 +1609,7 @@ shell.c
 	  run_startup_files() in the non-interactive case. Restore it after
 	  run_startup_files returns so we can get better error messages if
 	  we can't open a script file. Suggested by several people, originally
-	  by Marc Aurèle La France <tsi@tuyoix.net> back in 2/2021 (in a
+	  by Marc AurÃ¨le La France <tsi@tuyoix.net> back in 2/2021 (in a
 	  different form) and most recently by Tapani Tarvainen
 	  <bash@tapanitarvainen.fi>
 
@@ -1905,7 +1905,7 @@ lib/readline/search.c
 	  position of the last matching history entry. This means that things
  	  like ^P will start back from that history entry, ^N will move
 	  forward from there, and operate-and-get-next will work like it does
-	  with incremental searches. Reported by Vandrus Zoltán
+	  with incremental searches. Reported by Vandrus ZoltÃ¡n
 	  <vandrus.zoltan@gmail.com>
 
 				   9/10
@@ -2254,7 +2254,7 @@ subst.c
 	  make sure to create an option string and call make_internal_declare
 	  with options that start with a `+' so the attribute is off when
 	  the assignment is performed and changes how the value is expanded.
-	  From a report by Léa Gris <lea.gris@noiraude.net>
+	  From a report by LÃ©a Gris <lea.gris@noiraude.net>
 
 lib/readline/complete.c
 	- rl_display_match_list: even if _rl_completion_prefix_display_length
@@ -3379,7 +3379,7 @@ lib/readline/search.c
 				   ----
 lib/readline/nls.c
 	- xmalloc.h: include for systems without setlocale(), so xfree has a
-	  prototype. Report and fix from András Kucsma <r0maikx02b@gmail.com>
+	  prototype. Report and fix from AndrÃ¡s Kucsma <r0maikx02b@gmail.com>
 
 lib/readline/search.c
 	- _rl_history_search_internal: use previous-history/next-history to
@@ -3779,7 +3779,7 @@ parse.y
 lib/readline/isearch.c
 	- rl_display_search: don't call rl_redisplay_function before returning;
 	  rl_message already calls it. Reported by
-	  Frédéric Moulins <frederic@moulins.org>
+	  FrÃ©dÃ©ric Moulins <frederic@moulins.org>
 
 configure.ac
 	- bumped version to bash-5.2-rc2
